@@ -1,0 +1,62 @@
+/** 
+* Paste one or more documents here
+*/
+{
+    "_id": {
+        "$oid": "61b966aed393c28a8afb1080"
+    },
+    "nis": "02042011012",
+    "data_siswa": {
+      "data_diri": {
+        "nama_lengkap": "Dion Ferdian Syam",
+        "tempat_lahir": "Pekanbaru",
+        "tanggal_lahir": "2001-02-08",
+        "jenis_kelamin": "laki-laki",
+        "agama": "Islam",
+        "status_dalam_keluarga": "anak kandung",
+        "anak_ke": 3,
+        "alamat": "Bandung, Jawa Barat",
+        "telepon": "085156649665",
+        "orang_tua": {
+          "ayah": {
+            "nama": "Edison",
+            "alamat": "Pekanbaru, Riau",
+            "pekerjaan": "-"            
+          },
+          "ibu": {
+            "nama": "Fitri Yanti",
+            "alamat": "Pekanbaru, Riau",
+            "pekerjaan": "-"            
+          },
+          "wali": {
+            "nama": "-",
+            "alamat": "-",
+            "pekerjaan": "-"        
+          }          
+        }        
+      }
+    }    
+    
+}
+
+{
+    "nis": "02042011012",
+    "nama_lengkap": "Dion Ferdian Syam",
+    "tempat_lahir": "Pekanbaru",
+    "tanggal_lahir": "2001-02-08",
+    "jenis_kelamin": "laki-laki",
+    "agama": "Islam",
+    "status_dalam_keluarga": "anak kandung",
+    "anak_ke": 3,
+    "alamat": "Bandung, Jawa Barat",
+    "telepon": "085156649665",
+    "nama_ayah": "Edison",
+    "alamat_ayah": "Pekanbaru, Riau",
+    "pekerjaan": "-",            
+    "nama_ibu": "Fitri Yanti",
+    "alamat_ibu": "Pekanbaru, Riau",
+    "pekerjaan_ibu": "-",     
+    "nama_wali": "-",
+    "alamat_wali": "-",
+    "pekerjaan_wali": "-"       
+}

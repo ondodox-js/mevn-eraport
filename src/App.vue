@@ -1,28 +1,10 @@
 <template>
-    <sidebar />
-    <div class="main-wrapper">
-        <!-- main-nav -->
-        <Nav />
-        <!-- main -->
-        <Main />
-        <!-- footer -->
-        <Footer />
-    </div>
+    <router-view />
 </template>
 <script>
-import Sidebar from './components/layouts/Sidebar.vue';
-import Nav from './components/layouts/Nav.vue';
-import Main from '../public/Main.vue';
-import Footer from './components/layouts/Footer.vue';
-
 export default {
     name: 'App',
-    components: {
-        Sidebar,
-        Nav,
-        Main,
-        Footer,
-    },
+    components: {},
 };
 </script>
 

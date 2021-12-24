@@ -1,22 +1,12 @@
 <template>
-    <footer class="footer">
-        <div class="container footer--flex">
-            <div class="footer-start">
-                <p>
-                    2021 © Elegant Dashboard -
-                    <a
-                        href="elegant-dashboard.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >elegant-dashboard.com</a
-                    >
-                </p>
-            </div>
-            <ul class="footer-end">
-                <li><a href="##">About</a></li>
-                <li><a href="##">Support</a></li>
-                <li><a href="##">Puchase</a></li>
-            </ul>
+    <footer class="main-footer">
+        <strong
+            >Copyright &copy; 2014-2019
+            <a href="http://adminlte.io">AdminLTE.io</a>.</strong
+        >
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.0.4
         </div>
     </footer>
 </template>

@@ -1,233 +1,233 @@
 <template>
-    <aside class="sidebar">
-        <div class="sidebar-start">
-            <div class="sidebar-head">
-                <a href="/" class="logo-wrapper" title="Home">
-                    <span class="sr-only">Home</span>
-                    <span class="icon logo" aria-hidden="true"></span>
-                    <div class="logo-text">
-                        <span class="logo-title">Elegant</span>
-                        <span class="logo-subtitle">Dashboard</span>
-                    </div>
-                </a>
-                <button
-                    class="sidebar-toggle transparent-btn"
-                    title="Menu"
-                    type="button"
-                >
-                    <span class="sr-only">Toggle menu</span>
-                    <span class="icon menu-toggle" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="sidebar-body">
-                <ul class="sidebar-body-menu">
-                    <li>
-                        <a class="active" href="/"
-                            ><span class="icon home" aria-hidden="true"></span
-                            >Dashboard</a
-                        >
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span
-                                class="icon document"
-                                aria-hidden="true"
-                            ></span
-                            >Posts
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="posts.html">All Posts</a>
-                            </li>
-                            <li>
-                                <a href="new-post.html">Add new post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span class="icon folder" aria-hidden="true"></span
-                            >Categories
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="categories.html">All categories</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span class="icon image" aria-hidden="true"></span
-                            >Media
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="media-01.html">Media-01</a>
-                            </li>
-                            <li>
-                                <a href="media-02.html">Media-02</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span class="icon paper" aria-hidden="true"></span
-                            >Pages
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="pages.html">All pages</a>
-                            </li>
-                            <li>
-                                <a href="new-page.html">Add new page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="comments.html">
-                            <span
-                                class="icon message"
-                                aria-hidden="true"
-                            ></span>
-                            Comments
-                        </a>
-                        <span class="msg-counter">7</span>
-                    </li>
-                </ul>
-                <span class="system-menu__title">system</span>
-                <ul class="sidebar-body-menu">
-                    <li>
-                        <a href="appearance.html"
-                            ><span class="icon edit" aria-hidden="true"></span
-                            >Appearance</a
-                        >
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span
-                                class="icon category"
-                                aria-hidden="true"
-                            ></span
-                            >Extentions
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="extention-01.html">Extentions-01</a>
-                            </li>
-                            <li>
-                                <a href="extention-02.html">Extentions-02</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="show-cat-btn" href="##">
-                            <span class="icon user-3" aria-hidden="true"></span
-                            >Users
-                            <span
-                                class="category__btn transparent-btn"
-                                title="Open list"
-                            >
-                                <span class="sr-only">Open list</span>
-                                <span
-                                    class="icon arrow-down"
-                                    aria-hidden="true"
-                                ></span>
-                            </span>
-                        </a>
-                        <ul class="cat-sub-menu">
-                            <li>
-                                <a href="users-01.html">Users-01</a>
-                            </li>
-                            <li>
-                                <a href="users-02.html">Users-02</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="##"
-                            ><span
-                                class="icon setting"
-                                aria-hidden="true"
-                            ></span
-                            >Settings</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="sidebar-footer">
-            <a href="##" class="sidebar-user">
-                <span class="sidebar-user-img">
-                    <picture
-                        ><source
-                            srcset="/img/avatar/avatar-illustrated-01.webp"
-                            type="image/webp" />
-                        <img
-                            src="/img/avatar/avatar-illustrated-01.png"
-                            alt="User name"
-                    /></picture>
-                </span>
-                <div class="sidebar-user-info">
-                    <span class="sidebar-user__title">Nafisa Sh.</span>
-                    <span class="sidebar-user__subtitle">Support manager</span>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+            <img
+                src="/dist/img/AdminLTELogo.png"
+                alt="AdminLTE Logo"
+                class="brand-image img-circle elevation-3"
+                style="opacity: 0.8"
+            />
+            <span class="brand-text font-weight-light">AdminLTE 3</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img
+                        src="/dist/img/user2-160x160.jpg"
+                        class="img-circle elevation-2"
+                        alt="User Image"
+                    />
                 </div>
-            </a>
+                <div class="info">
+                    <a href="#" class="d-block">Admin sekolah</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul
+                    class="nav nav-pills nav-sidebar flex-column"
+                    data-widget="treeview"
+                    role="menu"
+                    data-accordion="false"
+                >
+                    <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <router-link
+                            :to="{ name: 'home.index' }"
+                            class="nav-link"
+                        >
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>Dashboard</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link
+                            :to="{
+                                name: 'daftar-siswa',
+                            }"
+                            class="nav-link"
+                        >
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>Siswa terdaftar</p>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/widgets.html" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Widgets
+                                <span class="right badge badge-danger"
+                                    >New</span
+                                >
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-copy"></i>
+                            <p>
+                                Layout Options
+                                <i class="fas fa-angle-left right"></i>
+                                <span class="badge badge-info right">6</span>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a
+                                    href="pages/layout/top-nav.html"
+                                    class="nav-link"
+                                >
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Top Navigation</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-header">EXAMPLES</li>
+                    <li class="nav-item">
+                        <a href="pages/calendar.html" class="nav-link">
+                            <i class="nav-icon far fa-calendar-alt"></i>
+                            <p>
+                                Calendar
+                                <span class="badge badge-info right">2</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-envelope"></i>
+                            <p>
+                                Mailbox
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a
+                                    href="pages/mailbox/mailbox.html"
+                                    class="nav-link"
+                                >
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Inbox</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="pages/mailbox/compose.html"
+                                    class="nav-link"
+                                >
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Compose</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="pages/mailbox/read-mail.html"
+                                    class="nav-link"
+                                >
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Read</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-header">MISCELLANEOUS</li>
+                    <li class="nav-item">
+                        <a href="https://adminlte.io/docs/3.0" class="nav-link">
+                            <i class="nav-icon fas fa-file"></i>
+                            <p>Documentation</p>
+                        </a>
+                    </li>
+                    <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-circle nav-icon"></i>
+                            <p>Level 1</p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-circle"></i>
+                            <p>
+                                Level 1
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Level 2</p>
+                                </a>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>
+                                        Level 2
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i
+                                                class="far fa-dot-circle nav-icon"
+                                            ></i>
+                                            <p>Level 3</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i
+                                                class="far fa-dot-circle nav-icon"
+                                            ></i>
+                                            <p>Level 3</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i
+                                                class="far fa-dot-circle nav-icon"
+                                            ></i>
+                                            <p>Level 3</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Level 2</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-header">LABELS</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon far fa-circle text-danger"></i>
+                            <p class="text">Important</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
         </div>
+        <!-- /.sidebar -->
     </aside>
 </template>
 
 <script>
 export default {
-    name: 'Sidebar',
+    name: 'SideBar',
 };
 </script>
+
+<style></style>

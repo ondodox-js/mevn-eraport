@@ -89,15 +89,15 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-header">EXAMPLES</li>
+                    <li class="nav-header">KELOLA DATA</li>
                     <li class="nav-item">
-                        <a href="pages/calendar.html" class="nav-link">
-                            <i class="nav-icon far fa-calendar-alt"></i>
-                            <p>
-                                Calendar
-                                <span class="badge badge-info right">2</span>
-                            </p>
-                        </a>
+                        <router-link
+                            :to="{ name: 'daftar-siswa-tambah' }"
+                            class="nav-link"
+                        >
+                            <i class="nav-icon fas fa-user-plus"></i>
+                            <p>Siswa baru</p>
+                        </router-link>
                     </li>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">

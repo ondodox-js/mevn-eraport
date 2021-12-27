@@ -30,7 +30,7 @@
         <section class="content">
             <div class="container-fluid">
                 <!-- Main row -->
-                <div class="row">
+                <div class="row justify-content-end">
                     <div class="col-sm-12 col-md-6">
                         <!-- select -->
                         <div class="form-group">
@@ -48,9 +48,7 @@
                                     :key="index"
                                     :value="kelas"
                                 >
-                                    {{
-                                        `${kelas.nama_kelas} - ${kelas.jumlah_siswa} Orang - ${kelas.wali_kelas}`
-                                    }}
+                                    {{ `${kelas.nama_kelas}` }}
                                 </option>
                             </select>
                         </div>
@@ -60,18 +58,65 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Daftar kelas</h3>
+                                <h3 class="card-title">
+                                    Data
+                                    {{
+                                        selectKelas
+                                            ? `kelas ${selectKelas.nama_kelas}`
+                                            : 'seluruh kelas'
+                                    }}
+                                </h3>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
+                                <div class="form-group row">
+                                    <label
+                                        for="inputEmail3"
+                                        class="col-sm-2 col-form-label"
+                                        >Wali kelas</label
+                                    >
+                                    <label
+                                        for="inputEmail3"
+                                        class="col-sm-2 col-form-label"
+                                        >{{
+                                            selectKelas
+                                                ? `${selectKelas.wali_kelas}`
+                                                : `Semua`
+                                        }}</label
+                                    >
+                                </div>
+                                <div class="form-group row">
+                                    <label
+                                        for="inputEmail3"
+                                        class="col-sm-2 col-form-label"
+                                        >Jumlah siswa</label
+                                    >
+                                    <label
+                                        for="inputEmail3"
+                                        class="col-sm-2 col-form-label"
+                                        >{{
+                                            selectKelas
+                                                ? `${selectKelas.jumlah_siswa}`
+                                                : dataKelas.reduce(
+                                                      (i, j) =>
+                                                          i + j.jumlah_siswa,
+                                                      0
+                                                  )
+                                        }}
+                                        Orang</label
+                                    >
+                                </div>
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th style="width: 10px">#</th>
-                                            <th>Kelas</th>
-                                            <th>Jumlah siswa</th>
-                                            <th class="text-center">
-                                                Wali kelas
+                                            <th>NIS</th>
+                                            <th>Nama siswa</th>
+                                            <th
+                                                class="text-center"
+                                                style="widht: 40px"
+                                            >
+                                                Detail
                                             </th>
                                         </tr>
                                     </thead>
@@ -132,7 +177,7 @@ export default {
     data() {
         return {
             dataKelas: [],
-            selectKelas: '',
+            selectKelas: false,
         };
     },
     mounted() {
@@ -163,18 +208,10 @@ export default {
     },
     methods: {
         opsiKelas: function () {
-            if (this.selectKelas) {
-                const slugKelas = this.selectKelas.nama_kelas
-                    .toLowerCase()
-                    .replaceAll(' ', '-');
-                this.$router.push({
-                    name: 'daftar-siswa-slug',
-                    params: { slug: slugKelas },
-                });
-                console.log(slugKelas);
-            } else {
-                console.log('semua');
-            }
+            // if (this.selectKelas) {
+            //     const slugKelas = this.selectKelas.toLowerCase();
+            //     console.log(slugKelas);
+            // }
         },
     },
 };

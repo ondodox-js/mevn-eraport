@@ -7,6 +7,7 @@ import HPContact from '../components/contents/home/Contact.vue';
 
 //siswa-terdaftar
 import daftarSiswa from '../components/contents/siswa-terdaftar/Index.vue';
+import tambahSiswa from '../components/contents/siswa-terdaftar/Create.vue';
 
 const routes = [
     {
@@ -25,14 +26,14 @@ const routes = [
                 component: HPContact,
             },
             {
-                path: '/daftar-siswa/:slug',
-                name: 'daftar-siswa-slug',
-                component: daftarSiswa,
-            },
-            {
                 path: '/daftar-siswa',
                 name: 'daftar-siswa',
                 component: daftarSiswa,
+            },
+            {
+                path: '/daftar-siswa/tambah-siswa',
+                name: 'daftar-siswa-tambah',
+                component: tambahSiswa,
             },
         ],
     },
